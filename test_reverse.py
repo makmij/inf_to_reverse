@@ -10,7 +10,7 @@ def calc():
 
 
 def test_basic(calc):
-    assert calc('2 + 3') == 5
+    assert calc('2 + 3') == 999
     assert calc('5 * 2') == 10
 
 

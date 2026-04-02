@@ -15,14 +15,14 @@ def test_basic(calc):
 
 
 def test_priority(calc):
-    assert calc('2 + 3 * 4') == 14  # * > +
-    assert calc('2 ^ 3 ^ 2') == 512  # ^ правоассоциативно: 2^(3^2)
+    assert calc('2 + 3 * 4') == 14
+    assert calc('2 ^ 3 ^ 2') == 512
 
 
 def test_brackets(calc):
     assert calc('3 + 4 * (2 - 1)') == 7
 
 
-def test_fail_initial(calc):  # Провальное: деление на 0
+def test_fail_initial(calc):
     with pytest.raises(ZeroDivisionError):
         calc('1 / (2 - 2)')

@@ -69,7 +69,6 @@ def evaluate_rpn(rpn):
 
 
 def main():
-    print("ОПН Калькулятор (пример: 3 + 4 * (2 - 1))")
     print("Введите 'exit' для выхода")
 
     while True:
@@ -80,7 +79,7 @@ def main():
         try:
             rpn = infix_to_reverse(expr)
             result = evaluate_rpn(rpn)
-            print(f"ОПН: {rpn}")
+            print(f"Обратная польская запись: {rpn}")
             print(f"Результат: {result}\n")
         except Exception as e:
             print(f"Ошибка: {e}\n")
